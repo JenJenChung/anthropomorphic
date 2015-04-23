@@ -1,0 +1,139 @@
+html {
+    background-color: #FFFFFF;
+    background-image: linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -o-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -moz-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -webkit-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    background-image: -ms-linear-gradient(270deg,rgb(230,233,233) 0%,rgb(216,221,221) 100%);
+    
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+    max-width: 800px;
+    font-family: "Arial", Arial, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #404040;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #334CA0;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+footer {
+    font-weight: 100;
+    font-size: 10px;
+    text-align: right;
+    vertical-align: bottom;
+    font: "Arial";
+    color: #334CA0;
+    background-color: transparent;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+samp {
+    /* hide tutorial instructions so they don't show in the browser */
+    display: none;
+}
+
+img {
+    background: transparent;
+    border-style: none;
+    <!--
+    -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    -->
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+@-webkit-keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+
+ #navbar ul { 
+	margin: 0; 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: left; 
+	background-color: transparent; 
+	} 
+ 
+#navbar ul li {  
+	display: inline; 
+    vertical-align: bottom;
+	} 
+ 
+#navbar ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: #334CA0; 
+	background-color: transparent; 
+    vertical-align: bottom;
+	} 
+
+#navbar ul li a:hover { 
+	color: #EE243B; 
+	background-color: transparent; 
+    vertical-align: bottom;
+	} 
+
+.bg
+{
+  width: 100%;
+  z-index: 0;
+}
+
+table,th,td,a
+{
+    border:1px transparent;
+    border-spacing:10px;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: top;
+    background-color: transparent;
+    color: #404040;
+    font: "Arial";
+    font-weight: 100;
+}
+
+table a:hover
+{
+    text-decoration: underline;
+}
