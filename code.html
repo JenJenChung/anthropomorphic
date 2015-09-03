@@ -28,11 +28,21 @@
   </ul> 
 </div> 
         
-        <h1 align="left">Jen Jen Chung</h1>
+        <h1 align="left"><a href="https://github.com/JenJenChung"><img src="Code/git_profile.png" align="right" height="128"/></a>Jen Jen Chung</h1>
+        
+        <p>My research code is available on <a href="https://github.com/JenJenChung"><b>GitHub</b></a>. Descriptions of individual repositories are provided below, please see the project outlines on the home page for more details.</p>
         
         <!--
             Git links and tutorials
         -->
+        <h3 align="left">NASA UAV traffic management</h3>
+        <p>Code to train the control policies of a team of neuro-evolutionary agents. These agents apply dynamic costs to travel through sectors of the airspace with the goal of alleviating air traffic congestion. Multiple package delivery UAVs are spawned in the urban airspace throughout the simulation. UAVs use either A* or risk aware graph search (RAGS) for path planning.</p>
+        <ul>
+          <li style="list-style-type:disc"><b>UTM</b> source: git <a href="https://github.com/JenJenChung/UTM">https://github.com/JenJenChung/UTM.git</a></li>
+          <li style="list-style-type:disc"><b>libraries</b> source: git <a href="https://github.com/JenJenChung/libraries">https://github.com/JenJenChung/libraries.git</a></li>
+          (Forked from <a href="https://github.com/rebhuhnc/libraries">https://github.com/rebhuhnc/libraries.git</a> with thanks to C. Rebhuhn.)
+        </ul>
+        
         <h3 align="left">Pioneer3dx ROS indigo and Gazebo2 simulation</h3>
         <a href="Code/Pioneer3dx%20simulation/pioneer3dx_simulation.png"><img src="Code/Pioneer3dx%20simulation/Thumbnails/pioneer3dx_simulation.png" height="128" /></a>
         <p>The following packages are an amalgamation of the <a href="http://wiki.ros.org/p2os">p2os package</a> and various ROS and Gazebo tutorials. The code and the accompanying documentation is mainly for archival purposes since I'm bound to forget how to replicate it in the future...</p>
@@ -40,6 +50,20 @@
           <li style="list-style-type:disc"><b>pioneer_gazebo_ros</b> source: git <a href="https://github.com/JenJenChung/pioneer_gazebo_ros">https://github.com/JenJenChung/pioneer_gazebo_ros.git</a></li>
           <li style="list-style-type:disc"><b>pioneer_2dnav</b> source: git <a href="https://github.com/JenJenChung/pioneer_2dnav">https://github.com/JenJenChung/pioneer_2dnav.git</a></li>
           <li style="list-style-type:disc">Installation instructions and basic ROS and Gazebo tutorial <a href="Code/Pioneer3dx%20simulation/ros-indigo-gazebo2-pioneer.pdf">[pdf]</a></li>
+        </ul>
+        
+        <h3 align="left">Pioneer3dx ROS indigo platform testing</h3>
+        <p>Code to run basic SLAM and waypoint navigation on the Pioneer3dx platform in concert with RosAria. Waypoints are sent via Twist messages with appropriated states: [x,y,z], [yaw,pitch,roll], either in the base_link or map frame.</p>
+        <ul>
+          <li style="list-style-type:disc"><b>pioneer_test</b> source: git <a href="https://github.com/JenJenChung/pioneer_test">https://github.com/JenJenChung/pioneer_test.git</a></li>
+          <li style="list-style-type:disc"><b>pioneer_2dnav</b> source: git <a href="https://github.com/JenJenChung/pioneer_2dnav">https://github.com/JenJenChung/pioneer_2dnav.git</a></li>
+          <li style="list-style-type:disc"><b>simple_navigation_goals</b> source: git <a href="https://github.com/JenJenChung/simple_navigation_goals">https://github.com/JenJenChung/simple_navigation_goals.git</a></li>
+        </ul>
+        
+        <h3 align="left">Sensor network benchmarking</h3>
+        <p>Code simulating a decentralised version of the sensor network problem from <a href="http://www.cs.rutgers.edu/~mlittman/topics/nips05-mdp/bakeoffs05.pdf">NIPS RL benchmarking 2005</a>. Code is currently used for investigating informative exploration-exploitation methods in learning.</p>
+        <ul>
+          <li style="list-style-type:disc"><b>Sensor-Network</b> source: git <a href="https://github.com/JenJenChung/Sensor-Network">https://github.com/JenJenChung/Sensor-Network.git</a></li>
         </ul>
 
     </body>
