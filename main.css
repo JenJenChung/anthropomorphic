@@ -13,8 +13,8 @@ body {
     margin: 0 auto;
     padding: 2em 2em 4em;
     max-width: 1024px;
-    font-family: "Arial", Arial, Arial, sans-serif;
-    font-weight: 100;
+    font-family: "Arial", Arial, sans-serif;
+    font-size: 100%;
     line-height: 1.5em;
     color: #404040;
     background-color: #FFFFFF;
@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
     margin-top: 1.3em;
+}
+
+p {
+		font-size: 1.0em;
 }
 
 footer {
