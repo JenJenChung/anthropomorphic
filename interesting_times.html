@@ -9,6 +9,8 @@
         <meta name="author" content="Jen Jen Chung">
         <link rel="stylesheet" href="main.css">
         <link rel="shortcut icon" href="Logo/Derived/ICO/J2.ico">
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     </head>
     <body>
         <!--
@@ -33,6 +35,77 @@
             Videos
         -->
         <h2>Interesting Times</h2>
+        <h3>Probabiliscuit</h3>
+        
+        <p>For a while now, N has been an avid consumer of the Honey Maid Graham biscuits. Initially we bought the packs with the Minions characters, but when the Star Wars biscuits came out, there was no question as to which set of flour-based fictional characters we’d rather be eating (our one weakness in an otherwise steadfast resistance against the nation-wide compulsion to throw money at the megalithic franchise). In any case, both N and I lack self-control when it comes to snacking on things that can be eaten by the handful. In an effort to retain some dignity in the matter, N devised a biscuit-sampling strategy that would:</p>
+        <img alt="Protective Yoda" src="Interesting%20Times/Probabiliscuit/protective_yoda.png" style="float:right;height:360px;" hspace="10"/>
+        <ol>
+            <li>Curb our mindless snacking behaviour, and</li>
+            <li>Stay faithful to our probabilistic roots.</li>
+        </ol>
+        
+        <p>The strategy is simple: you randomly sample and eat one biscuit from the pack at a time, and you stop once you pick out Yoda.</p>
+        
+        <p><i>“Stop eating biscuits, you must.”</i> – Yoda</p>
+        
+        <p>At once you have plunged your dreary junk food-eating habits into the beautiful swirling cup of randomness stirred vigorously by the spoon of mathematical probability. You may not share my passion in this matter, but there is no denying the satisfaction of being able to hold the universe accountable for your personal vices.</p>
+        
+        <p>It also helps that there is a rather stern-looking Yoda on the front of the pack holding a lightsaber in... not exactly a menacing way, but certainly one that suggests to the viewer that they ought to rethink reaching for another one of those biscuits shown floating around the fluorescing weapon.</p>
+        
+        <p>The question that remains, of course, is how many biscuits do you actually expect to eat each time? To answer this succinctly and without the hassle of pouring out all the biscuits and counting the number of times each character occurs, allow me to assume that each time I reach into the box, I am drawing from a limitless biscuit universe where there is an equal probability of drawing out any of the characters. If there are $m$ different characters in this biscuit universe, then for any draw n, the probability of Yoda appearing and ruining my diet is $\left(\frac{1}{m}\right)$. The $\left(n-1\right)$ biscuits that I would have happily consumed up to that point would all be sampled with a joint probability of $\left(\frac{m-1}{m}\right)^{n-1}$. The expected number of biscuits I get to eat can then be calculated by solving:</p>
+        
+        <p><img alt="The Cast" src="Interesting%20Times/Probabiliscuit/the_cast.png" style="float:left;height:320px;" hspace="10"/></p>
+        
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <munderover>
+                <mo>&sum;</mo>
+                <mrow>
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                </mrow>
+                <mi>&infin;</mi>
+            </munderover>
+            <mrow>
+                <mi>n</mi>
+                <msup>
+                <mfenced separators=' '>
+                    <mfrac>
+                        <mrow>
+                            <mi>m</mi>
+                            <mo>-</mo>
+                            <mn>1</mn>
+                        </mrow>
+                        <mi>m</mi>
+                    </mfrac>
+                </mfenced>
+                <mrow>
+                    <mi>n</mi>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                </mrow>
+                </msup>
+                <mfenced separators=' '>
+                    <mfrac>
+                        <mn>1</mn>
+                        <mi>m</mi>
+                    </mfrac>
+                </mfenced>
+            </mrow>
+        </math>
+        
+        <p>which, with great satisfaction, turns out to equal $m$.</p>
+        
+        <p>So for the Honey Maid Star Wars Graham biscuits, our expected serving size is in fact 7 biscuits. We’re positively dieting compared to the recommended 17 biscuits per serving! Although methinks the latter number more accurately accounts for the hysteresis apparent in our will to stick to one sampling sequence per serving. Frankly, my fat-kid mentality now has me on the lookout for biscuits with more varieties of characters or shapes in one box so that I can innocently bump up the expected serving size. My nerd mentality has me thinking of ways to justify additional biscuit consumption if the sample size falls below $1\sigma$. Perhaps this was all an exercise in futility. Nevertheless, there is something distinctly human about deriving the truth of something that you’ve always suspected with certainty, and then devising ways to outmanouevre the consequences in favour of old habits.</p>
+        
+        <p>&nbsp</p>
+        
+        <p>J<sup>2</sup></p>
+        
+        <p>23 February, 2016</p>
+        
+        <p>&nbsp</p>
+        
         <h3>The Final Pong</h3>
         
         <p>For centuries, the most noble and glorious traditions of mankind have seen brave men and women face off on the battlefield: jousting, arm wrestling and duelling at high noon. Yet the praise for victors of such battles cannot compare to the majesty and splendour bestowed upon those who may truly call themselves champions; those who crush their opponents with keen eyes, swift hands and sharp tongues; those who conquer in beer pong.</p>
