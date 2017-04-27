@@ -16,17 +16,19 @@
         -->
 <div id="navbar"> 
   <ul> 
-    <li><a href="http://robotics.oregonstate.edu/">
-            <img alt="OSU logo" src="Logo/OSU/osu-tag.png" width="10%" /></a></li>
+<!--    <li><a href="http://robotics.oregonstate.edu/">-->
+<!--            <img alt="OSU logo" src="Logo/OSU/osu-tag.png" width="10%" /></a></li>-->
     <li><a href="index.html">Home</a></li> 
     <li><a href="publications.html">Publications</a></li> 
     <li><a href="#">Code</a></li>
 	  <li><a href="teaching.html">Teaching</a></li> 
 	  <li><a href="gallery.html">Gallery</a></li> 
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="interesting_times.html">Interesting Times</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="interesting_times.html">Interesting Times</a></li>
+	  <li><a href="http://robotics.oregonstate.edu/">OSU Robotics</a></li>
   </ul> 
 </div> 
+<hr />
         
         <h1 align="left"><a href="https://github.com/JenJenChung"><img src="Code/git_profile.png" align="right" height="128"/></a>Jen Jen Chung</h1>
         
@@ -35,38 +37,45 @@
         <!--
             Git links and tutorials
         -->
+        <h3 align="left">RAGS</h3>
+        <p>Code for testing the Risk-Aware Graph Search algorithm on randomly generated graphs (see the <a href="Papers/Skeele2016risk.pdf">WAFR2016</a> paper for details on the algorithm). The README.md inside the RAGS repository provides instructions on how to edit the search parameters, build and run the code. The rags_ros package includes the RAGS header files and example ROS nodes for implementing the RAGS planner with the Pioneer3dx Gazebo2 simulation. See rags_ros_how_to_run.txt for the relevant command line instructions.</p>
+        <ul>
+          <li style="list-style-type:disc"><b>RAGS</b>: <a href="https://github.com/JenJenChung/RAGS">https://github.com/JenJenChung/RAGS.git</a></li>
+          <li style="list-style-type:disc"><b>rags_ros</b>: <a href="https://github.com/JenJenChung/rags_ros">https://github.com/JenJenChung/rags_ros.git</a></li>
+        </ul>
+        
         <h3 align="left">NASA UAV traffic management</h3>
         <p>Code to train the control policies of a team of neuro-evolutionary agents. These agents apply dynamic costs to travel through sectors of the airspace with the goal of alleviating air traffic congestion. Multiple package delivery UAVs are spawned in the urban airspace throughout the simulation. UAVs use either A* or risk aware graph search (RAGS) for path planning.</p>
         <ul>
-          <li style="list-style-type:disc"><b>UTM</b> source: git <a href="https://github.com/JenJenChung/UTM">https://github.com/JenJenChung/UTM.git</a></li>
-          <li style="list-style-type:disc"><b>libraries</b> source: git <a href="https://github.com/JenJenChung/libraries">https://github.com/JenJenChung/libraries.git</a></li>
+          <li style="list-style-type:disc"><b>UTM</b>: <a href="https://github.com/JenJenChung/UTM">https://github.com/JenJenChung/UTM.git</a></li>
+          <li style="list-style-type:disc"><b>libraries</b>: <a href="https://github.com/JenJenChung/libraries">https://github.com/JenJenChung/libraries.git</a></li>
           (Forked from <a href="https://github.com/rebhuhnc/libraries">https://github.com/rebhuhnc/libraries.git</a> with thanks to C. Rebhuhn.)
         </ul>
         
         <h3 align="left">Pioneer3dx ROS indigo and Gazebo2 simulation</h3>
         <a href="Code/Pioneer3dx%20simulation/pioneer3dx_simulation.png"><img src="Code/Pioneer3dx%20simulation/Thumbnails/pioneer3dx_simulation.png" height="128" /></a>
-        <p>The following packages are an amalgamation of the <a href="http://wiki.ros.org/p2os">p2os package</a> and various ROS and Gazebo tutorials. The code and the accompanying documentation is mainly for archival purposes since I'm bound to forget how to replicate it in the future...</p>
+        <p>The following packages are an amalgamation of the <a href="http://wiki.ros.org/p2os">p2os package</a> and various ROS and Gazebo tutorials. The code and the accompanying documentation are mainly for archival purposes since I'm bound to forget how to replicate it in the future...</p>
         <ul>
-          <li style="list-style-type:disc"><b>pioneer_gazebo_ros</b> source: git <a href="https://github.com/JenJenChung/pioneer_gazebo_ros">https://github.com/JenJenChung/pioneer_gazebo_ros.git</a></li>
-          <li style="list-style-type:disc"><b>pioneer_2dnav</b> source: git <a href="https://github.com/JenJenChung/pioneer_2dnav">https://github.com/JenJenChung/pioneer_2dnav.git</a></li>
-          <li style="list-style-type:disc"><b>simple_navigation_goals</b> source: git <a href="https://github.com/JenJenChung/simple_navigation_goals">https://github.com/JenJenChung/simple_navigation_goals.git</a></li>
-          <li style="list-style-type:disc"><b>nav_bundle</b> source: git <a href="https://github.com/JenJenChung/nav_bundle">https://github.com/JenJenChung/nav_bundle.git</a></li>
+          <li style="list-style-type:disc"><b>pioneer_gazebo_ros</b>: <a href="https://github.com/JenJenChung/pioneer_gazebo_ros">https://github.com/JenJenChung/pioneer_gazebo_ros.git</a></li>
+          <li style="list-style-type:disc"><b>pioneer_2dnav</b>: <a href="https://github.com/JenJenChung/pioneer_2dnav">https://github.com/JenJenChung/pioneer_2dnav.git</a></li>
+          <li style="list-style-type:disc"><b>simple_navigation_goals</b>: <a href="https://github.com/JenJenChung/simple_navigation_goals">https://github.com/JenJenChung/simple_navigation_goals.git</a></li>
+          <li style="list-style-type:disc"><b>nav_bundle</b>: <a href="https://github.com/JenJenChung/nav_bundle">https://github.com/JenJenChung/nav_bundle.git</a></li>
           <li style="list-style-type:disc"><b>Installation instructions and basic ROS and Gazebo tutorial</b> <a href="Code/Pioneer3dx%20simulation/ros-indigo-gazebo2-pioneer.pdf">[pdf]</a></li>
         </ul>
         
         <h3 align="left">Pioneer3dx ROS indigo platform testing</h3>
         <p>Code to run basic SLAM and waypoint navigation on the Pioneer3dx platform in concert with RosAria. Waypoints are sent via Twist messages with appropriated states: [x,y,z], [roll,pitch,yaw], either in the base_link or map frame.</p>
         <ul>
-          <li style="list-style-type:disc"><b>pioneer_test</b> source: git <a href="https://github.com/JenJenChung/pioneer_test">https://github.com/JenJenChung/pioneer_test.git</a></li>
-          <li style="list-style-type:disc"><b>pioneer_2dnav</b> source: git <a href="https://github.com/JenJenChung/pioneer_2dnav">https://github.com/JenJenChung/pioneer_2dnav.git</a></li>
-          <li style="list-style-type:disc"><b>simple_navigation_goals</b> source: git <a href="https://github.com/JenJenChung/simple_navigation_goals">https://github.com/JenJenChung/simple_navigation_goals.git</a></li>
-          <li style="list-style-type:disc"><b>nav_bundle</b> source: git <a href="https://github.com/JenJenChung/nav_bundle">https://github.com/JenJenChung/nav_bundle.git</a></li>
+          <li style="list-style-type:disc"><b>pioneer_test</b>: <a href="https://github.com/JenJenChung/pioneer_test">https://github.com/JenJenChung/pioneer_test.git</a></li>
+          <li style="list-style-type:disc"><b>pioneer_2dnav</b>: <a href="https://github.com/JenJenChung/pioneer_2dnav">https://github.com/JenJenChung/pioneer_2dnav.git</a></li>
+          <li style="list-style-type:disc"><b>simple_navigation_goals</b>: <a href="https://github.com/JenJenChung/simple_navigation_goals">https://github.com/JenJenChung/simple_navigation_goals.git</a></li>
+          <li style="list-style-type:disc"><b>nav_bundle</b>: <a href="https://github.com/JenJenChung/nav_bundle">https://github.com/JenJenChung/nav_bundle.git</a></li>
         </ul>
         
         <h3 align="left">Sensor network benchmarking</h3>
         <p>Code simulating a decentralised version of the sensor network problem from <a href="http://www.cs.rutgers.edu/~mlittman/topics/nips05-mdp/bakeoffs05.pdf">NIPS RL benchmarking 2005</a>. Code is currently used for investigating informative exploration-exploitation methods in learning.</p>
         <ul>
-          <li style="list-style-type:disc"><b>Sensor-Network</b> source: git <a href="https://github.com/JenJenChung/Sensor-Network">https://github.com/JenJenChung/Sensor-Network.git</a></li>
+          <li style="list-style-type:disc"><b>Sensor-Network</b>: <a href="https://github.com/JenJenChung/Sensor-Network">https://github.com/JenJenChung/Sensor-Network.git</a></li>
         </ul>
 
     </body>
