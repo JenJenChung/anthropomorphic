@@ -55,6 +55,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: #1F407A;
 }
 
 b, strong {
@@ -150,4 +151,47 @@ table a:hover
 
 .left{
     float:left;
+}
+
+
+.collapsible, .slide-toggle {
+    color: #5C5C5B;
+    font-weight: 400;
+    line-height: 1.3em;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    width: none;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: "Arial", Arial, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.collapsible:hover, .slide-toggle:hover {
+    background-color: #FFFFFF;
+    color: #1F407A;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #FFFFFF;
+  width: 400px;
+}
+
+.box{
+    float:left;
+    overflow: hidden;
+    background: #FFFFFF;
+    display: none;
+}
+/* Add padding and border to inner content
+for better animation effect */
+.box-inner{
+    width: 1024px;
+    padding: 10px;
+    border: none;
 }
