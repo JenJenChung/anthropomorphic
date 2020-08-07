@@ -24,7 +24,7 @@
         Jen Jen Chung</h1>
         
         <p>
-            I am currently a postdoc in the <a href="http://www.asl.ethz.ch" target="_blank">Autonomous Systems Lab</a> at ETH Z&uuml;rich. Previously I was at the <a href="http://robotics.oregonstate.edu" target="_blank">Collaborative Robotics and Intelligent Systems Institute</a> in Oregon State University and prior to that I completed my PhD at the <a href="http://www.acfr.usyd.edu.au" target="_blank">Australian Centre for Field Robotics</a> in the University of Sydney<a href="#fn1" id="r1">*</a>. See below for the latest <a href="#news">news</a> and a list of my <a href="#projects">current and past research projects</a>.
+            I am currently a senior researcher in the <a href="http://www.asl.ethz.ch" target="_blank">Autonomous Systems Lab</a> at ETH Z&uuml;rich. Previously I was at the <a href="http://robotics.oregonstate.edu" target="_blank">Collaborative Robotics and Intelligent Systems Institute</a> in Oregon State University and prior to that I completed my PhD at the <a href="http://www.acfr.usyd.edu.au" target="_blank">Australian Centre for Field Robotics</a> in the University of Sydney<a href="#fn1" id="r1">*</a>. See below for the latest <a href="#news">news</a> and a list of my <a href="#projects">current and past research projects</a>.
         </p>
         
         <section id="news">
@@ -32,6 +32,7 @@
         <details open="open">
           <summary>2020</summary>
           <ul>
+              <li>Our papers on <b>interaction-aware motion planning</b>, <b>learning multi-robot communication policies</b> and <b>autonomous racing</b> will be presented at IROS 2020! Check out the pre-prints available in the <a href="publications.html"><b>publications</b></a> tab.</li>
             <li>Check out our ICRA video presentation for <a href="https://www.youtube.com/watch?v=mstDjxxDFPc" target="_blank"><b>Informative path planning for active mapping under localization uncertainty</b></a></li>
             <li>Our papers on <a href="publications.html"><b>localisation-aware informative path planning</b></a> and <a href="publications.html"><b>predicting communication connectivity for cooperative localisation</b></a> will be presented at ICRA 2020!</li>
             <li>Our JAAMAS paper on <a href="https://rdcu.be/b0BHL" target="_blank"><b>The impact of agent definitions and interactions on multiagent learning for coordination in traffic management domains</b></a> is now available online. Code for the multiagent learning experiments are also available <a href="code.html">[here]</a></li>
@@ -61,55 +62,73 @@
         
         <section id="projects">
         <h2 align="left">Current and Past Projects</h2>
-<!--        <button class="slide-toggle">UAV Traffic Management-->
-<!--        <p><img src="Home/NASAUTM.png" align="left" height="256" hspace="10"/></p></button>-->
-<!--        <p><div class="box">-->
-<!--          <div class="box-inner">-->
+        
+        <h3>ASL, ETH Z&uuml;rich</h3>
+        <img class="myImages" id="mImg" src="Home/yumiBanana.png" height="256" hspace="10"
+        alt="<b>Robotic Mobile Manipulation</b><p>Current robotic automation solutions typically offer 'islands of automation' where either mobility or manipulation is dealt with in isolation. Our research in this area aims to fill this gap in knowledge on combining both robotic mobility and manipulation modalities in complex, human-centred environments. Mobile manipulation tasks require robots that can interact with the world across a wide operational spectrum, from the (sub)millimetre precision required for fine manipulation to navigating across building- and campus-scale spaces. This motivates a holistic representation of the environment that facilitates the tight integration of socially aware planning, perception and control, and allows cognitive elements such as learning, reasoning and adaptation of actions for natural interaction.</p>"/>
+        
+        <img class="myImages" id="mImg" src="Home/navigation_in_crowds.png" height="256" hspace="10"
+        alt="<b>Safe Robot Navigation in Dense Crowds</b><p>Navigating through human crowds is a tough challenge for a robot. Crowds can cause severe sensor occlusions and often don't leave much free space for the robot to move in, leading to what's known as the 'freezing robot problem'. As part of the European Commisssion H2020 CrowdBot Project, we are developing navigation and motion plannng algorithms that allow the robot to work with the flow of the crowd to get to its destination. We work on mapping, localisation, prediction, motion and interaction planning to help the robot answer four key questions for successful robot crowd navigation:</p><p>1. Where am I?</p><p>2. Who's around me?</p><p>3. Where am I going?</p><p>4. How should I get there?</p>"/>
+
+        <h3>CoRIS, Oregon State University</h3>
+        <img class="myImages" id="mImg" src="Home/NASAUTM.png" height="220" hspace="10"
+        alt="<b>UAV Traffic Management</b><p>UAV traffic management in urban airspaces can be formulated as a problem of routing autonomously guided robots using cost space manipulation to induce safe trajectories in the work space. Each UAV does not explicitly coordinate with other vehicles in the airspace. Instead, they each execute their own individual internal cost-based planner to travel between locations. We are developing a high-level UAV traffic management (UTM) system that can dynamically adapt the cost space to reduce the number of conflict incidents in the airspace without needing explicit knowledge of the internal planners of each UAV. Our decentralized and distributed system of high-level traffic controllers each learn appropriate costing strategies via a neuro-evolutionary algorithm. The policies learned by our algorithm demonstrated a reduction in the total number of conflict incidents experienced in the airspace while maintaining throughput performance. Current research is looking at methods to account for traffic heterogeneity in the system.</p>"/>
+        
+        <img class="myImages" id="mImg" src="Home/probabilityOfImprovement.png" height="220" hspace="10"
+        alt="<b>Risk Aware Graph Search</b><p>We are investigating novel approaches to searching a graph with probabilistic edge costs, namely, by incorporating available uncertainty information into the graph search. Our proposed risk aware graph search (RAGS) method consists of two major steps, the first is to perform an initial search across the graph to find the set of non-dominated paths. Following this, we perform risk-aware planning during path execution as information of the true neighboring edge costs become available. Initial results in a graph search domain have demonstrated superior performance when compared to A*, D* and a greedy approach.</p>"/>
+        
+        <img class="myImages" id="mImg" src="Home/structuralCreditAssignment.png" height="220" hspace="10"
+        alt="<b>Structural Credit Assignment in Multiagent Policy Learning</b><p>Autonomous multi-robot teams can be used in complex tasks to improve performance in terms of both speed and effectiveness. However, use of multi-robot systems presents additional challenges. Specifically, in domains where the robots' actions are coupled, coordinating multiple robots to achieve cooperative behavior at the group level is difficult. Reward shaping can greatly benefit policy learning in multi-robot tasks and we are investigating various reward frameworks based on the idea of <i>counterfactuals</i> to tackle the structural credit assignment problem in these coupled domains.</p>"/>
+        
+        <BR CLEAR="left"/>
+        <h3>ACFR, University of Sydney</h3>
+        <img class="myImages" id="mImg" src="Home/FPtrial0eps50.png" height="256" hspace="10"
+        alt="<b>Learning to Soar: Resource-Constrained Exploration</b><p>In 2014 I received my Ph.D., which I completed at the Australian Centre for Field Robotics at the University of Sydney. My research focused on the development of information-based exploration strategies that can be applied within reinforcement learning frameworks to characterise the exploration-exploitation trade-off within resource-constrained learning missions. The application of interest was an unpowered aerial glider learning to soar in a wind energy field.</p>"/>
+        
+        <img class="myImages" id="mImg" src="Home/locustTrials.png" height="256" hspace="10"
+        alt="<b>Locust Swarm Tracking</b><p>The goal of this project was to gather intra-swarm locust motion data for biologists at the University of Sydney to study the effects of inter-locust interactions on the overall swarm motion. The Australian Centre for Field Robotics developed a system to collect this data consisting of micro retro-reflectors (to be attached to the insects) and a UAV equipped with a strobe beacon to autonomously fly loops over the swarm to track and monitor insect locations in real-time. Proof-of-concept was demonstrated in 2011.</p>"/>
+        
+        
+        <div id="myModal" class="modal">
+          
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+          
+        </div>
+        
+<!--        <p><img src="Home/NASAUTM.png" align="left" height="256" hspace="10"/>-->
 <!--        UAV traffic management in urban airspaces can be formulated as a problem of routing autonomously guided robots using cost space manipulation to induce safe trajectories in the work space. Each UAV does not explicitly coordinate with other vehicles in the airspace. Instead, they each execute their own individual internal cost-based planner to travel between locations. We are developing a high-level UAV traffic management (UTM) system that can dynamically adapt the cost space to reduce the number of conflict incidents in the airspace without needing explicit knowledge of the internal planners of each UAV. Our decentralized and distributed system of high-level traffic controllers each learn appropriate costing strategies via a neuro-evolutionary algorithm. The policies learned by our algorithm demonstrated a reduction in the total number of conflict incidents experienced in the airspace while maintaining throughput performance. Current research is looking at methods to account for traffic heterogeneity in the system.-->
-<!--          </div>-->
-<!--        </div></p>-->
-        <h3 align="left">UAV Traffic Management</h3>
-        <p><img src="Home/NASAUTM.png" align="left" height="256" hspace="10"/>
-        UAV traffic management in urban airspaces can be formulated as a problem of routing autonomously guided robots using cost space manipulation to induce safe trajectories in the work space. Each UAV does not explicitly coordinate with other vehicles in the airspace. Instead, they each execute their own individual internal cost-based planner to travel between locations. We are developing a high-level UAV traffic management (UTM) system that can dynamically adapt the cost space to reduce the number of conflict incidents in the airspace without needing explicit knowledge of the internal planners of each UAV. Our decentralized and distributed system of high-level traffic controllers each learn appropriate costing strategies via a neuro-evolutionary algorithm. The policies learned by our algorithm demonstrated a reduction in the total number of conflict incidents experienced in the airspace while maintaining throughput performance. Current research is looking at methods to account for traffic heterogeneity in the system.
-        </p>
-        
-        <BR CLEAR="left"/>
-        <h3 align="left">Risk Aware Graph Search</h3>
-        <p><img src="Home/probabilityOfImprovement.png" align="right" height="256" hspace="10"/>
-        We are investigating novel approaches to searching a graph with probabilistic edge costs, namely, by incorporating available uncertainty information into the graph search. Our proposed risk aware graph search (RAGS) method consists of two major steps, the first is to perform an initial search across the graph to find the set of non-dominated paths. Following this, we perform risk-aware planning during path execution as information of the true neighboring edge costs become available. Initial results in a graph search domain have demonstrated superior performance when compared to A*, D* and a greedy approach.
-        </p>
-<!--        <p>-->
-<!--        <b>Students:</b> <a href="http://skeel3r.github.io/">Ryan Skeele</a>-->
 <!--        </p>-->
         
-        <BR CLEAR="left"/>
-        <p><img src="Home/structuralCreditAssignment.png" align="left" height="256" hspace="10"/>
-        <h3 align="left">Structural Credit Assignment in Multiagent Policy Learning</h3>
-        Autonomous multi-robot teams can be used in complex tasks to improve performance in terms of both speed and effectiveness. However, use of multi-robot systems presents additional challenges. Specifically, in domains where the robots' actions are coupled, coordinating multiple robots to achieve cooperative behavior at the group level is difficult. Reward shaping can greatly benefit policy learning in multi-robot tasks and we are investigating various reward frameworks based on the idea of <i>counterfactuals</i> to tackle the structural credit assignment problem in these coupled domains.
-        </p>
-<!--        <p>-->
-<!--        <b>Students:</b> <a href="http://mime.oregonstate.edu/grad/rahmattalabi-aida">Aida Rahmattalabi</a>, <a href="https://sites.google.com/a/oregonstate.edu/skhadka/">Shaw Khadka</a>-->
+<!--        <BR CLEAR="left"/>-->
+<!--        <h3 align="left">Risk Aware Graph Search</h3>-->
+<!--        <p><img src="Home/probabilityOfImprovement.png" align="right" height="256" hspace="10"/>-->
+<!--        We are investigating novel approaches to searching a graph with probabilistic edge costs, namely, by incorporating available uncertainty information into the graph search. Our proposed risk aware graph search (RAGS) method consists of two major steps, the first is to perform an initial search across the graph to find the set of non-dominated paths. Following this, we perform risk-aware planning during path execution as information of the true neighboring edge costs become available. Initial results in a graph search domain have demonstrated superior performance when compared to A*, D* and a greedy approach.-->
 <!--        </p>-->
         
-        <BR CLEAR="right"/>
-        <img src="Home/FPtrial0eps50.png" align="right" height="256" hspace="10"/>
-        <h3 align="left">Learning to Soar: Resource-Constrained Exploration</h3>
-        <p>
-            In 2014 I received my Ph.D., which I completed at the <a href="http://www.acfr.usyd.edu.au" target="_blank">Australian Centre for Field Robotics</a> at the University of Sydney. My research focused on the development of information-based exploration strategies that can be applied within reinforcement learning frameworks to characterise the exploration-exploitation trade-off within resource-constrained learning missions. The application of interest was an unpowered aerial glider learning to soar in a wind energy field.
-        </p>
+<!--        <BR CLEAR="left"/>-->
+<!--        <p><img src="Home/structuralCreditAssignment.png" align="left" height="256" hspace="10"/>-->
+<!--        <h3 align="left">Structural Credit Assignment in Multiagent Policy Learning</h3>-->
+<!--        Autonomous multi-robot teams can be used in complex tasks to improve performance in terms of both speed and effectiveness. However, use of multi-robot systems presents additional challenges. Specifically, in domains where the robots' actions are coupled, coordinating multiple robots to achieve cooperative behavior at the group level is difficult. Reward shaping can greatly benefit policy learning in multi-robot tasks and we are investigating various reward frameworks based on the idea of <i>counterfactuals</i> to tackle the structural credit assignment problem in these coupled domains.-->
+<!--        </p>-->
         
-        <BR CLEAR="left"/>
-        <img src="Home/locustTrials.png" align="left" height="256" hspace="10"/>
-        <h3 align="left">Locust Swarm Tracking</h3>
-        <p>
-            The goal of this project was to gather intra-swarm locust motion data for biologists at the University of Sydney to study the effects of inter-locust interactions on the overall swarm motion. The Australian Centre for Field Robotics developed a system to collect this data consisting of micro retro-reflectors (to be attached to the insects) and a UAV equipped with a strobe beacon to autonomously fly loops over the swarm to track and monitor insect locations in real-time. Proof-of-concept was demonstrated in 2011.
-        </p>
+<!--        <BR CLEAR="right"/>-->
+<!--        <img src="Home/FPtrial0eps50.png" align="right" height="256" hspace="10"/>-->
+<!--        <h3 align="left">Learning to Soar: Resource-Constrained Exploration</h3>-->
+<!--        <p>-->
+<!--            In 2014 I received my Ph.D., which I completed at the <a href="http://www.acfr.usyd.edu.au" target="_blank">Australian Centre for Field Robotics</a> at the University of Sydney. My research focused on the development of information-based exploration strategies that can be applied within reinforcement learning frameworks to characterise the exploration-exploitation trade-off within resource-constrained learning missions. The application of interest was an unpowered aerial glider learning to soar in a wind energy field.-->
+<!--        </p>-->
+        
+<!--        <BR CLEAR="left"/>-->
+<!--        <img src="Home/locustTrials.png" align="left" height="256" hspace="10"/>-->
+<!--        <h3 align="left">Locust Swarm Tracking</h3>-->
+<!--        <p>-->
+<!--            The goal of this project was to gather intra-swarm locust motion data for biologists at the University of Sydney to study the effects of inter-locust interactions on the overall swarm motion. The Australian Centre for Field Robotics developed a system to collect this data consisting of micro retro-reflectors (to be attached to the insects) and a UAV equipped with a strobe beacon to autonomously fly loops over the swarm to track and monitor insect locations in real-time. Proof-of-concept was demonstrated in 2011.-->
+<!--        </p>-->
         </section>
-        
-        <BR CLEAR="right"/>
-        <BR CLEAR="right"/>
         <section>
-        <p class="note" id="fn1"><a href="#r1">*</a> Going even further back, I completed my HSC at <a href="http://www.hurlstone.com.au" target="_blank">Hurlstone Agricultural High School</a> after graduating from <a href="http://www.sackvillst-p.schools.nsw.edu.au" target="_blank">Sackville Street Primary School</a>.
+        <p class="note" id="fn1" style="clear:left;"><a href="#r1">*</a> Going even further back, I completed my HSC at <a href="http://www.hurlstone.com.au" target="_blank">Hurlstone Agricultural High School</a> after graduating from <a href="http://www.sackvillst-p.schools.nsw.edu.au" target="_blank">Sackville Street Primary School</a>.
         </p>
         </section>
     </div>
@@ -141,6 +160,34 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+</script>
+
+<script>
+  // create references to the modal...
+  var modal = document.getElementById('myModal');
+  // to all images -- note I'm using a class!
+  var images = document.getElementsByClassName('myImages');
+  // the image in the modal
+  var modalImg = document.getElementById("img01");
+  // and the caption in the modal
+  var captionText = document.getElementById("caption");
+
+  // Go through all of the images with our custom class
+  for (var i = 0; i < images.length; i++) {
+    var img = images[i];
+    // and attach our click listener for this image.
+    img.onclick = function(evt) {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+  }
+
+  var span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
 </script>
 
     </body>
