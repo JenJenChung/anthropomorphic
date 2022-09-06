@@ -16,7 +16,7 @@ body {
     font-family: "Arial", Arial, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
-    color: #5C5C5B;
+    color: #000000;
     background-color: #FFFFFF;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #5C5C5B;
+    color: #000000;
     font-weight: 400;
     line-height: 1.3em;
 }
@@ -39,7 +39,7 @@ footer {
     text-align: right;
     vertical-align: bottom;
     font: "Arial";
-    color: #5C5C5B;
+    color: #51247A;
     background-color: transparent;
 }
 
@@ -55,7 +55,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #1F407A;
+    color: #962A8B;
 }
 
 b, strong {
@@ -110,13 +110,13 @@ img {
 #navbar ul li a { 
 	text-decoration: none; 
 	padding: .2em 1em; 
-	color: #5C5C5B;
+	color: #51247A;
 	background-color: transparent; 
     vertical-align: bottom;
 	} 
 
 #navbar ul li a:hover { 
-	color: #1F407A; 
+	color: #962A8B;
 	background-color: transparent; 
     vertical-align: bottom;
 	} 
@@ -127,7 +127,7 @@ img {
   z-index: 0;
 }
 
-table,th,td,a
+table,th,td
 {
     border:1px transparent;
     border-spacing:10px;
@@ -135,7 +135,20 @@ table,th,td,a
     text-decoration: none;
     vertical-align: top;
     background-color: transparent;
-    color: #5C5C5B;
+    color: #000000;
+    font: "Arial";
+    font-weight: 100;
+}
+
+a
+{
+    border:1px transparent;
+    border-spacing:10px;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: top;
+    background-color: transparent;
+    color: #51247A;
     font: "Arial";
     font-weight: 100;
 }
@@ -155,7 +168,7 @@ table a:hover
 
 
 .collapsible, .slide-toggle {
-    color: #5C5C5B;
+    color: #51247A;
     font-weight: 400;
     line-height: 1.3em;
     background-color: #FFFFFF;
@@ -170,7 +183,7 @@ table a:hover
 
 .collapsible:hover, .slide-toggle:hover {
     background-color: #FFFFFF;
-    color: #1F407A;
+    color: #962A8B;
 }
 
 .content {
@@ -267,7 +280,7 @@ for better animation effect */
   position: absolute;
   top: 50px;
   left: 50px;
-  color: #5C5C5B;
+  color: #51247A;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
